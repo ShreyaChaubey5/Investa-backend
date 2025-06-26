@@ -25,7 +25,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL, process.env.DASHBOARD_URL],
+    origin: [process.env.FRONTEND_URL, process.env.DASHBOARD_URL, "https://investa-frontend-8gay-shreya-chaubeys-projects.vercel.app","https://investa-dashboard.vercel.app/"],
     credentials: true,
   })
 );
